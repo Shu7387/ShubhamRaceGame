@@ -1,0 +1,108 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.car,
+.enemyCar {
+  height: 80px;
+  width: 50px;
+  position: absolute;
+  bottom: 120px;
+
+  background-image: url(Car.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.overLay {
+  width: 100%;
+  height: 100%;
+  background: red;
+  opacity: 0.65;
+}
+
+.gameArea {
+  width: 700px;
+  height: 100vh;
+  background: #2d3436;
+  margin: auto;
+  position: relative;
+  border-right: 7px dashed #c8d6e5;
+  border-left: 7px dashed #c8d6e5;
+}
+
+.roadLines {
+  width: 10px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  margin-left: 345px;
+}
+
+#score {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: rgb(161, 238, 180);
+  width: 200px;
+  line-height: 70px;
+  text-align: center;
+  color: rgb(236, 60, 60);
+  font-size: x-large;
+  font-family: fantasy Verdana, sans-serif;
+  box-shadow: 0 5px 5px #777;
+}
+
+#SSD {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  background: rgb(161, 238, 180);
+  width: 100px;
+  line-height: 70px;
+  text-align: center;
+  color: rgb(5, 9, 204);
+}
+
+.startScreen {
+  position: absolute;
+  background-color: #e8f5cb;
+  left: 50%;
+  top: 50%;
+  color: rgb(20, 20, 20);
+  font-weight: bold;
+
+  /* This property allows you to rotate, scale, move, skew, etc., elements. */
+  transform: translate(-50%, -50%);
+
+  /* Whichever Element has higher z-index , it will be placed ahead other elements. */
+  z-index: 2;
+
+  text-align: center;
+  border: 1px solid #ff6b6b;
+  padding: 15px;
+  margin: auto;
+  width: 50%;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 5;
+  font-size: 20px;
+  word-spacing: 10px;
+  line-height: 30px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px #777;
+}
+
+.carGame {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.wallpapersafari.com/77/76/UMEJPw.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
